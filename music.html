@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>喜欢的音乐</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{background:#f5f5f7;padding:20px 15px;}
+        .back{display:inline-block;margin-bottom:20px;color:#007aff;text-decoration:none;}
+        h2{text-align:center;margin-bottom:30px;color:#222;}
+        .music-list{max-width:600px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:15px;}
+        .music-card{text-decoration:none;}
+        .music-img{width:100%;border-radius:8px;object-fit:cover;box-shadow:0 2px 6px #ddd;}
+        .music-name{text-align:center;margin-top:6px;font-size:14px;color:#444;}
+    </style>
+</head>
+<body>
+    <a href=" " class="back">← 返回首页</a >
+    <h2>我的音乐收藏</h2>
+    <div class="music-list">
+        <!-- 替换封面图、歌名、播放链接 -->
+        <a href="播放地址1" target="_blank" class="music-card">
+            < img src="music1.jpg" class="music-img">
+            <p class="music-name">歌曲名称1</p >
+        </a >
+        <a href="播放地址2" target="_blank" class="music-card">
+            < img src="music2.jpg" class="music-img">
+            <p class="music-name">歌曲名称2</p >
+        </a >
+    </div>
+</body>
+</html>

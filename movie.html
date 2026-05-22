@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>喜欢的电影</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{background:#f5f5f7;padding:20px 15px;}
+        .back{display:inline-block;margin-bottom:20px;color:#007aff;text-decoration:none;}
+        h2{text-align:center;margin-bottom:30px;color:#222;}
+        .movie-list{max-width:600px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:15px;}
+        .movie-card{text-decoration:none;}
+        .movie-img{width:100%;border-radius:8px;object-fit:cover;box-shadow:0 2px 6px #ddd;}
+        .movie-name{text-align:center;margin-top:6px;font-size:14px;color:#444;}
+    </style>
+</head>
+<body>
+    <a href=" " class="back">← 返回首页</a >
+    <h2>我的电影收藏</h2>
+    <div class="movie-list">
+        <!-- 替换海报、电影名、播放链接 -->
+        <a href="观影地址1" target="_blank" class="movie-card">
+            < img src="movie1.jpg" class="movie-img">
+            <p class="movie-name">电影名称1</p >
+        </a >
+        <a href="观影地址2" target="_blank" class="movie-card">
+            < img src="movie2.jpg" class="movie-img">
+            <p class="movie-name">电影名称2</p >
+        </a >
+    </div>
+</body>
+</html>
