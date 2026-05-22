@@ -8,17 +8,29 @@
         *{margin:0;padding:0;box-sizing:border-box;}
         body{background:#f5f5f7;padding:20px 15px;}
         .back{display:inline-block;margin-bottom:20px;color:#007aff;text-decoration:none;}
-        h2{text-align:center;margin-bottom:30px;color:#222;}
-        .food-list{max-width:600px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:15px;}
+        h2{text-align:center;margin-bottom:30px;color:#222;font-size:28px;}
+        .food-list{
+            max-width:600px;
+            margin:0 auto;
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:15px;
+        }
         .food-item{text-align:center;}
         .food-img{
             width:100%;
-            height:180px; /* 固定高度，保证图片大小一致 */
+            height:180px;
             border-radius:8px;
-            object-fit:cover; /* 图片不变形，按比例裁剪 */
+            object-fit:cover;
             box-shadow:0 2px 6px #ddd;
         }
         .food-name{text-align:center;margin-top:6px;font-size:14px;color:#444;}
+        /* 让第四项靠左，不居中 */
+        @media screen and (min-width: 480px) {
+            .food-item:nth-child(4) {
+                grid-column: 1 / 2;
+            }
+        }
     </style>
 </head>
 <body>
