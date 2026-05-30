@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>喜欢的小说</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{background:#f5f5f7;padding:20px 15px;}
+        .back{display:inline-block;margin-bottom:20px;color:#007aff;text-decoration:none;}
+        h2{text-align:center;margin-bottom:40px;color:#222;font-size:28px;}
+        .movie-list{
+            max-width:600px;
+            margin:0 auto;
+            display:flex;
+            justify-content:center;
+            gap:30px;
+        }
+        .movie-card{
+            text-decoration:none;
+            /* 两张卡片宽度完全一致 */
+            width:230px;
+        }
+        .movie-img{
+            width:100%;
+            /* 强制两张图片宽高完全一样 */
+            height:340px;
+            border-radius:8px;
+            object-fit:cover; /* 图片裁剪填充，不变形 */
+            box-shadow:0 2px 6px #ddd;
+        }
+        .movie-name{
+            text-align:center;
+            margin-top:10px;
+            font-size:17px;
+            color:#222;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back">← 返回首页</a>
+    <h2>我的小说收藏</h2>
+    <div class="book-list">
+        <a href=" https://pan.baidu.com/s/1_n1DHQ6EHpJvCCMO9c_FeQ?pwd=9rju" target="_blank" class="book-card">
+            <img src="book1.jpg" class="movie-img" alt="《三体1》海报">
+            <p class="book-name">《三体1》</p>
+        </a>
+        <a href="https://pan.baidu.com/s/1gfl6PQi4tdGv0vrr0apHGg?pwd=vcyg"_blank" class="book-card">
+            <img src="book2.jpg" class="movie-img" alt="《三体2》海报">
+            <p class="book-name">《三体2》</p>
+        </a>
+        <a href="https://pan.baidu.com/s/1c3piOdzSK81yiG7xMPLrzg?pwd=4259"_blank" class="book-card">
+            <img src="book3.jpg" class="movie-img" alt="《三体3》海报">
+            <p class="book-name">《三体3》</p>
+        </a>
+    </div>
+</body>
+</html>
